@@ -1,92 +1,98 @@
-# 🏥 Healthcare Economics & Outcomes Research (HEOR) Analysis
+# 🏥 Healthcare Economics and Outcomes Research (HEOR)
 
-## 📌 Project Overview
-This project focuses on **Healthcare Economics & Outcomes Research (HEOR)** to analyze healthcare cost efficiency, service delivery, and patient outcomes using a structured data analytics workflow.  
-The goal is to evaluate how healthcare resources are utilized and how costs relate to patient recovery outcomes.
+## 📋 Project Overview
+This is a complete data analytics internship project that analyses hospital patient treatment data to study treatment costs, hospital stay durations, and patient recovery outcomes.
+
+**Project Title:** Healthcare Economics and Outcomes Research  
+**Year:** 2026  
+**Type:** Internship Data Analytics Project  
 
 ---
 
 ## 🎯 Objectives
-- Analyze healthcare treatment costs and hospital stay patterns
-- Evaluate patient recovery outcomes
-- Identify cost-efficient departments and treatment types
-- Support data-driven decision-making in healthcare management
+- Analyse treatment costs and recovery outcomes across 6 hospital departments
+- Rank doctors by patient recovery performance
+- Identify at-risk patients (long stay + poor recovery)
+- Build an interactive Power BI dashboard for hospital management
+- Provide data-driven recommendations to improve patient care
 
 ---
 
-## 🧾 Dataset Description
-The dataset contains anonymized patient-level healthcare data, including:
-
-- Patient demographics (Age, Gender)
-- Department and treatment type
-- Treatment cost
-- Hospital stay duration (days)
-- Recovery score
-- Cost efficiency metrics
-
-> **Note:** A dummy healthcare dataset is used for academic and analytical purposes.
+## 📊 Dataset
+| Attribute | Details |
+|-----------|---------|
+| Total Records | 200 patients |
+| Columns | 9 attributes per patient |
+| Departments | Cardiology, Neurology, Oncology, Orthopedics, Pediatrics, Gastroenterology |
+| Treatment Types | Surgery, Medication, Therapy, Observation |
+| Doctors | 5 doctors |
+| Age Range | 1 to 90 years |
 
 ---
 
-## 🔄 Project Workflow
-The analysis follows a complete HEOR workflow:
-
-1. **Data Collection**
-2. **Data Cleaning and Preprocessing**
-3. **Exploratory Data Analysis (EDA)** ✅
-4. **KPI Identification and Calculation** ⏳
-5. **Statistical Analysis**
-6. **Data Visualization**
-7. **Result Interpretation and Reporting**
+## 🛠️ Tools Used
+| Phase | Tool | Purpose |
+|-------|------|---------|
+| Phase 1 | Python 3 (Google Colab) | Data cleaning, EDA, visualisation |
+| Phase 2 | MySQL Workbench 8.0 | Database design and SQL queries |
+| Phase 3 | Microsoft Power BI | Interactive dashboard creation |
+| Phase 4 | Microsoft Word | Final report documentation |
 
 ---
 
-## 📊 Exploratory Data Analysis (Completed)
-During EDA, the following analyses were performed:
-- Descriptive statistics of cost, hospital stay, and recovery score
-- Patient demographic analysis
-- Department-wise cost and outcome comparison
-- Treatment-type performance evaluation
-- Correlation analysis between cost, hospital stay, and recovery
-- Identification of cost-efficient cases
-
-Key insights highlight variability in healthcare cost, length of stay, and recovery outcomes across departments and treatment types.
-
----
-
-## 🛠️ Tools & Technologies
-- **Programming Language:** Python  
-- **Libraries Used:**
-  - pandas
-  - numpy
-  - matplotlib
-  - seaborn
-  - scipy
+## 📁 Project Files
+| File | Description |
+|------|-------------|
+| `HEOR.ipynb` | Python notebook — data cleaning and EDA |
+| `FINAL_SQL_SCRIPT_HEOR.sql` | All 14 SQL queries for MySQL |
+| `Final_Dashboard.pbix` | Power BI interactive dashboard |
+| `Hospital_Report_Final.docx` | Final project report |
+| `hospital_cleaned.csv` | Cleaned dataset |
+| `hospital_patient_treatment_dataset.csv` | Original raw dataset |
 
 ---
 
-## 📈 Expected KPIs (Next Phase)
-- Average Cost per Patient
-- Cost per Recovery Point
-- Length of Stay Efficiency
-- Department-wise Cost Efficiency Index
+## 🔍 Key Findings
+- **Best Department:** Pediatrics — avg recovery score 73.13/100
+- **Best Treatment:** Surgery — avg recovery score 73.29/100
+- **Top Doctor:** Dr. M. Patel — best recovery (73.24) with lowest avg cost (₹70,756)
+- **At-Risk Patients:** 18 patients with hospital stay >20 days AND recovery <60
+- **Total Revenue:** ₹1.59 Crore across 200 patients
+- **Concern:** Medication is most used (55 patients) but has lowest recovery score (67.58)
 
 ---
 
-## 📌 Project Status
-🔹 EDA completed  
-🔹 KPI calculation and statistical analysis in progress  
+## 📈 Dashboard Features (Power BI)
+- 4 KPI Cards: Total Patients, Avg Cost, Avg Recovery, Avg Stay
+- 6 Charts: Bar, Donut, Column, Scatter, Funnel, Bar
+- 4 Interactive Slicers: Department, Gender, Treatment Type, Age Group
 
 ---
 
-## 👤 Author
-**Prasanna Bade**  
-B.Tech – Data Science  
-Healthcare Analytics | HEOR | Data Analytics  
+## 🚀 How to Run
+**Python Notebook:**
+1. Open Google Colab (colab.research.google.com)
+2. Upload HEOR.ipynb
+3. Upload hospital_patient_treatment_dataset.csv
+4. Run all cells
+
+**SQL Script:**
+1. Open MySQL Workbench
+2. Run FINAL_SQL_SCRIPT_HEOR.sql
+3. Import hospital_cleaned.csv into the patients table
+
+**Power BI Dashboard:**
+1. Open Final_Dashboard.pbix in Power BI Desktop
+2. Dashboard loads automatically
 
 ---
 
-## 📜 Disclaimer
-This project is for **academic and educational purposes only**.  
-The dataset used does not represent real patient data.
+## 📌 Recommendations
+1. Review medication protocols — most used but worst recovery
+2. Support Neurology department — lowest recovery score
+3. Urgently review 18 at-risk patients
+4. Learn from Dr. M. Patel's approach — best outcomes, lowest cost
+5. Use Power BI dashboard monthly for performance monitoring
 
+---
+*Internship Project — 2026*
